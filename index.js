@@ -1,5 +1,4 @@
 var cartas = [];
-
 var descarte = [];
 var concluido;
 
@@ -12,14 +11,13 @@ while (cartas.length > 1) {
   if (cartas.length > 1) {
     cartas.unshift(cartas.pop());
   }
-  alert('cartas descartadas: ' + descarte + '\ncartas restantes: ' + cartas);
+  alert('cartas descartadas: ' + descarte.join(", ") + '\ncartas restantes: ' + cartas);
   concluido =
     'cartas descartadas: ' +
-    descarte +
+    descarte.join(", ") +
     '<br>cartas restantes: ' +
     cartas +
-    '<br>===========================================';
-  
+    '<br>====================================';
 }
 while (total > 0) {
   break;
