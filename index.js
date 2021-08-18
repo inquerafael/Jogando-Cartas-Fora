@@ -1,12 +1,12 @@
 var cartas = [];
 var descarte = [];
 var concluido;
-
+// sistema para preencher o array inicial usando caixa de diálogo
 total = parseInt(prompt('imforme total'));
 for (i = total; i > 0; i--) {
   cartas.push(i);
 }
-
+//while responsavel pela disposicao dos numeros nos respectivos arrays descarte/restante
 while (cartas.length > 1) {
   descarte.push(cartas.pop());
   if (cartas.length > 1) {
