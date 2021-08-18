@@ -1,8 +1,7 @@
 var cartas = [];
 
 var descarte = [];
-
-var total;
+var concluido;
 
 total = parseInt(prompt('imforme total'));
 for (i = total; i > 0; i--) {
@@ -10,11 +9,19 @@ for (i = total; i > 0; i--) {
 }
 while (cartas.length > 1) {
   descarte.push(cartas.pop());
-  if (cartas.lengtht > 1) {
+  if (cartas.length > 1) {
     cartas.unshift(cartas.pop());
   }
   alert('cartas descartadas: ' + descarte + '\ncartas restantes: ' + cartas);
-  cartas = [];
-  descarte = [];
+  concluido =
+    'cartas descartadas: ' +
+    descarte +
+    '<br>cartas restantes: ' +
+    cartas +
+    '<br>===========================================';
+  
 }
-while (total > 0);
+while (total > 0) {
+  break;
+}
+document.getElementById('exemplo').innerHTML = concluido;
