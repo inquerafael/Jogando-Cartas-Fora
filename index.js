@@ -1,7 +1,7 @@
 var cartas = [];
 var descarte = [];
 var concluido;
-// sistema para preencher o array inicial usando caixa de diálogo
+// sistema para preencher o parâmetro inicial usando caixa de diálogo
 total = parseInt(prompt('imforme total'));
 for (i = total; i > 0; i--) {
   cartas.push(i);
