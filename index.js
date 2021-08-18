@@ -2,6 +2,8 @@ var cartas = [];
 
 var descarte = [];
 
+var total;
+
 total = parseInt(prompt('imforme total'));
 for (i = total; i > 0; i--) {
   cartas.push(i);
@@ -14,5 +16,5 @@ while (cartas.length > 1) {
   alert('cartas descartadas: ' + descarte + '\ncartas restantes: ' + cartas);
   cartas = [];
   descarte = [];
-  while (total > 0);
 }
+while (total > 0);
